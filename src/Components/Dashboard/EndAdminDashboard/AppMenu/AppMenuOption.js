@@ -68,6 +68,14 @@ const AppMenuOption = () => (
 						</p>
 					</a>
 				</li>
+				<li className="nav-item">
+					<a href="/" className="nav-link">
+						<i className="nav-icon fas fa-th"></i>
+						<p>
+							Logout
+						</p>
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</>

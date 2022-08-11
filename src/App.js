@@ -7,8 +7,8 @@ function App() {
   return(
     <>
     
-    {/* <EndAdminDashboard/> */}
-    <Lorem />
+    <EndAdminDashboard/>
+    {/* <Lorem /> */}
     </>
   );
 }
