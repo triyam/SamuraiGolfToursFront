@@ -10,19 +10,19 @@ const Lorem = () => {
     <>
     {/* <div className="row"> */}
     <div className='container mt-3' style={{marginBottom:"5%"}}>
-          <Header/>
+          {/* <Header/> */}
           </div>
           
    
     
-          <Breadcrumb listProps={{ className: 'mb-0' }}>
-        <Breadcrumb.Item onClick={() => navigate('/home')} style={{ paddingBottom: '0px' }}>
+          {/* <Breadcrumb listProps={{ className: 'mb-0' }}> */}
+        {/* <Breadcrumb.Item onClick={() => navigate('/home')} style={{ paddingBottom: '0px' }}> */}
           Home
-        </Breadcrumb.Item>
-        <Breadcrumb.Item active onClick={() => navigate('/lorem')} style={{ paddingBottom: '0px' }}>
+        {/* </Breadcrumb.Item> */}
+        {/* <Breadcrumb.Item active onClick={() => navigate('/lorem')} style={{ paddingBottom: '0px' }}> */}
         私たちに関しては
-        </Breadcrumb.Item>
-      </Breadcrumb>
+        {/* </Breadcrumb.Item> */}
+      {/* </Breadcrumb> */}
       <div className="container mt-3">
         
         <h1>私たちに関しては</h1>
@@ -55,7 +55,7 @@ const Lorem = () => {
         </p>
         </div>
         <div>
-        <Footer/>
+        {/* <Footer/> */}
         </div>
       {/* </div> */}
     </>
