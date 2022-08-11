@@ -7,15 +7,8 @@ function App() {
   return(
     <>
     
-
-    <Router>
-           <div>
-           <EndAdminDashboard />
-           <Routes>
-                 <Route exact path='/lorem' element={< Lorem />}></Route>
-          </Routes>
-          </div>
-       </Router>
+    {/* <EndAdminDashboard/> */}
+    <Lorem />
     </>
   );
 }

@@ -12,7 +12,7 @@ const AppFooter = () => (
 						<Link to='/lorem'>About US</Link> 
 					<span>|</span>
 					<Link to='/lorem'>ゴルフ場・宿泊・観光地の登録について</Link> 
-
+						
 					<span>|</span>
 		
 					<Link to='/lorem'>利用規約</Link>

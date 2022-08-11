@@ -3,26 +3,8 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
 
 const Lorem = () => {
-  const location = useLocation();
-  const { title } = location.state;
-  const navigate = useNavigate();
   return (
     <>
-    {/* <div className="row"> */}
-    <div className='container mt-3' style={{marginBottom:"5%"}}>
-          {/* <Header/> */}
-          </div>
-          
-   
-    
-          {/* <Breadcrumb listProps={{ className: 'mb-0' }}> */}
-        {/* <Breadcrumb.Item onClick={() => navigate('/home')} style={{ paddingBottom: '0px' }}> */}
-          Home
-        {/* </Breadcrumb.Item> */}
-        {/* <Breadcrumb.Item active onClick={() => navigate('/lorem')} style={{ paddingBottom: '0px' }}> */}
-        私たちに関しては
-        {/* </Breadcrumb.Item> */}
-      {/* </Breadcrumb> */}
       <div className="container mt-3">
         
         <h1>私たちに関しては</h1>
@@ -55,9 +37,7 @@ const Lorem = () => {
         </p>
         </div>
         <div>
-        {/* <Footer/> */}
         </div>
-      {/* </div> */}
     </>
   );
 };
