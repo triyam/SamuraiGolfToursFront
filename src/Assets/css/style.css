@@ -1810,6 +1810,14 @@ section {
   padding-left: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+  .footerop{
+    padding-left:10%;
+    padding-right:10%;
+    padding-bottom:20%;
+  }
+}
+
 .blog .entry-single {
   margin-bottom: 30px;
 }
