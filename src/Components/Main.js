@@ -9,7 +9,11 @@ import LoginUser from "./Auth/Login/LoginUser"
 import Lorem from './Home/Sample/Lorem';
 import Lorem2 from './Home/Sample/Lorem2';
 import Footer from './Home/Footer/Footer';
+<<<<<<< HEAD
 import Navbar from './Home/Navbar/Navbar'
+=======
+import LandingPage from "./Home/Landing/LandingPage";
+>>>>>>> origin/master
 
 
 const Main = () => (
@@ -20,8 +24,14 @@ const Main = () => (
       {/* <TravelDashboard/> */}
       {/* <UserDashboard /> */}
       {/* <RegisterAdmin/> */}
+<<<<<<< HEAD
       {/* <LoginUser/> */}
       <LoginUser/>
+=======
+
+      <LandingPage/>
+
+>>>>>>> origin/master
       <Footer />
     </>
 )
