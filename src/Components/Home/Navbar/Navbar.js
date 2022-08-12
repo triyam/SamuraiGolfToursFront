@@ -16,12 +16,12 @@ const Navbar = () => (
                       ゲスト登録
                     </a> */}
                   {/* <Link id="has_bottom_border" to="/signin"> */}
-                  <Link id="has_bottom_border" to="/userLogin">
+                  <Link id="has_bottom_border" to="/userlogin">
                     ゲスト登録
                   </Link>
                 </li>
                 <li>
-                  <Link id="has_bottom_border" to="/login" state={{ title: 'ホスト登録' }}>
+                  <Link id="has_bottom_border" to="/adminlogin" state={{ title: 'ホスト登録' }}>
                     ホスト登録
                   </Link>
                 </li>
