@@ -1,15 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import EndAdminDashboard from "./Components/Dashboard/EndAdminDashboard/EndAdminDashboard";
-// import Lorem from './Components/Home/Sample/Lorem';
-// import Footer from './Components/Home/Footer/Footer'
 // import './Assets/css/style.css';
+
+import Main from "./Components/Main"
+import Routes from "./Components/routes/routes"
 
 function App() {
   return(
-    <>
-      <EndAdminDashboard/>
-    </>
+    <div>
+      <Main>
+      <Routes />
+      </Main>
+    </div>
   );
 }
 

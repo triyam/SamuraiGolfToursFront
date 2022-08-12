@@ -71,7 +71,7 @@ h6 {
   padding-bottom: 3px;
 }
 .slider-container .owl-theme {
-  background: url('../img/smallSliderImages/small_slider_bg.png') no-repeat;
+  /* background: url('../img/smallSliderImages/small_slider_bg.png') no-repeat; */
 }
 .slider-container .owl-item {
   height: 175px !important;
@@ -84,7 +84,7 @@ h6 {
 }
 
 .mene-container-1 {
-  background: url('../img/main/pagemenu_bg.png') no-repeat;
+  /* background: url('../img/main/pagemenu_bg.png') no-repeat; */
   background-size: cover;
   position: absolute;
   bottom: 275px;
@@ -123,7 +123,7 @@ h6 {
 
 .menu-container-2 .right,
 .menu-container-2 .left {
-  background: url('../img/main/pagemenu_bg.png') no-repeat;
+  /* background: url('../img/main/pagemenu_bg.png') no-repeat; */
   background-size: cover;
   font-family: Source Han Sans CN;
   color: #f8ddbd;
@@ -458,7 +458,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url('../img/main/toppage-header.png') top center no-repeat;
+  /* background: url('../img/main/toppage-header.png') top center no-repeat; */
   background-size: cover;
   position: relative;
   padding-top: 82px;
@@ -2329,7 +2329,7 @@ Custom Css
 */
 
 #advanced_search {
-  background: url('../img/main/golf-ball-grass-field.png') no-repeat right center;
+  /* background: url('../img/main/golf-ball-grass-field.png') no-repeat right center; */
   background-size: cover;
   position: relative;
   height: 200px;
@@ -2802,7 +2802,7 @@ ul {
 #golf_man {
   position: relative;
   margin-top: 400px;
-  background: url('../img/main/golfMan.png') bottom no-repeat;
+  /* background: url('../img/main/golfMan.png') bottom no-repeat; */
   background-size: cover;
   height: 980px;
   overflow: visible;
@@ -2903,7 +2903,7 @@ ul {
 }
 
 #reco {
-  background: url('../img/main/bottom_section.png') no-repeat;
+  /* background: url('../img/main/bottom_section.png') no-repeat; */
   background-size: cover;
   padding-bottom: 0;
 }
@@ -2946,7 +2946,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('../img/main/small_slider_bg.png') no-repeat;
+  /* background: url('../img/main/small_slider_bg.png') no-repeat; */
   background-size: cover;
   padding: 25px 0;
   overflow: hidden;
@@ -3404,7 +3404,7 @@ ul {
     right: 0;
     left: 0;
     bottom: 0;
-    background: url('../img/main/small_slider_bg.png') no-repeat;
+    /* background: url('../img/main/small_slider_bg.png') no-repeat; */
     background-size: cover;
     padding: 7px 0;
     padding-bottom: 0px;

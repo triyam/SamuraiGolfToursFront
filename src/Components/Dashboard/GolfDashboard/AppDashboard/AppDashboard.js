@@ -1,10 +1,10 @@
 import React from "react";
 
-const AppSetting = () => (
+const AppDashboard = () => (
     <>
       Hello
       
     </>
 )
 
-export default AppSetting
+export default AppDashboard
