@@ -5,9 +5,11 @@ import SiteSeeingAuthorityDashboard from "./Dashboard/SiteSeeingAuthorityDashboa
 import TravelDashboard from "./Dashboard/TravelDashboard/TravelDashboard"
 import UserDashboard from "./Dashboard/UserDashboard/UserDashboard"
 import RegisterAdmin from "./Auth/Register/RegisterAdmin";
+import LoginUser from "./Auth/Login/LoginUser"
 import Lorem from './Home/Sample/Lorem';
 import Lorem2 from './Home/Sample/Lorem2';
 import Footer from './Home/Footer/Footer';
+import Navbar from './Home/Navbar/Navbar'
 
 
 const Main = () => (
@@ -17,8 +19,9 @@ const Main = () => (
       {/* <SiteSeeingAuthorityDashboard /> */}
       {/* <TravelDashboard/> */}
       {/* <UserDashboard /> */}
-      <RegisterAdmin/>
-
+      {/* <RegisterAdmin/> */}
+      {/* <LoginUser/> */}
+      <LoginUser/>
       <Footer />
     </>
 )

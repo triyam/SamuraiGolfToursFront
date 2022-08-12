@@ -3,6 +3,7 @@ import React from "react";
 
 import Main from "./Components/Main"
 import Routes from "./Components/routes/routes"
+import "./Assets/css/style.css"
 
 function App() {
   return(
