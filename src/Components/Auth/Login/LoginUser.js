@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LoginUser = () => (
       <div className="login-page"> 
@@ -57,10 +58,12 @@ const LoginUser = () => (
 
 
       <p class="mb-1">
-        <a href="forgot-password.html">I forgot my password</a>
+        <Link to='/forgetpass'>I forgot my password</Link>
       </p>
       <p class="mb-0">
-        <a href="/" class="text-center">Register a new membership</a>
+      
+        <Link to='/userregister' className="text-center">Register a new membership</Link>
+
       </p>
     </div>
 

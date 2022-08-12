@@ -12,6 +12,8 @@ import Lorem2 from "./Home/Sample/Lorem2";
 import Footer from "./Home/Footer/Footer";
 import LandingPage from "./Home/Landing/LandingPage";
 import LoginUser from "./Auth/Login/LoginUser";
+import ForgetPassword from './Auth/ForgetPassword';
+import RegisterUser from "./Auth/Register/RegisterUser";
 
 const Main = () => (
   <>
@@ -28,6 +30,9 @@ const Main = () => (
       <Route path="/adminlogin" element={<LoginUser/>}></Route>
       <Route path="/lorem" element={<Lorem/>}></Route>
       <Route path="/lorem2" element={<Lorem2/>}></Route>
+      <Route path="/forgetpass" element={<ForgetPassword/>}></Route>
+      <Route path="/adminregister" element={<RegisterAdmin/>}></Route>
+      <Route path="/userregister" element={<RegisterUser/>}></Route>
     </Routes>
   </>
 );

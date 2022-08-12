@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Register = () => (
     <>
@@ -81,7 +82,7 @@ const Register = () => (
         </a>
       </div>
 
-      <a href="/" class="text-center">I already have a membership</a>
+      <Link to="/userlogin" className="text-center">I already have a membership</Link>
     </div>
 
   </div>
