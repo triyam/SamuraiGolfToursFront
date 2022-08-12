@@ -8,6 +8,7 @@ import RegisterAdmin from "./Auth/Register/RegisterAdmin";
 import Lorem from './Home/Sample/Lorem';
 import Lorem2 from './Home/Sample/Lorem2';
 import Footer from './Home/Footer/Footer';
+import LandingPage from "./Home/Landing/LandingPage";
 
 
 const Main = () => (
@@ -17,7 +18,9 @@ const Main = () => (
       {/* <SiteSeeingAuthorityDashboard /> */}
       {/* <TravelDashboard/> */}
       {/* <UserDashboard /> */}
-      <RegisterAdmin/>
+      {/* <RegisterAdmin/> */}
+
+      <LandingPage/>
 
       <Footer />
     </>
