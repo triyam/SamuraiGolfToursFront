@@ -131,11 +131,6 @@ const LoginUser = () => {
                 Register a new membership
               </a>
             </p>
-            <p className="mb-1">
-              <a href="/registerAdmin" className="text-center">
-                Register as a admin
-              </a>
-            </p>
           </div>
         </div>
       </div>

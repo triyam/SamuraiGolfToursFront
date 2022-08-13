@@ -52,22 +52,17 @@ const Navbar = () => {
                     </a> */}
                     {/* <Link id="has_bottom_border" to="/signin"> */}
                     <Link id="has_bottom_border" to="/userLogin">
-                      LogIn
+                      ゲスト登録
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="#"
+                      to="/adminLogin"
                       id="has_bottom_border"
-                      onClick={() => setModalShow(true)}
                       state={{ title: 'ホスト登録' }}
                     >
-                      Register
+                      ホスト登録
                     </Link>
-                    <MyVerticallyCenteredModal
-                      show={modalShow}
-                      onHide={() => setModalShow(false)}
-                    />
                   </li>
                 </ul>
               </nav>

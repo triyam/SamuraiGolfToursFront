@@ -9,6 +9,7 @@ import RegisterAdmin from '../Auth/Register/RegisterAdmin'
 import RegisterUser from '../Auth/Register/RegisterUser'
 import LandingPage from '../Home/Landing/LandingPage'
 import UserDashboard from '../Dashboard/UserDashboard/UserDashboard'
+import LoginAdmin from '../Auth/Login/LoginAdmin'
 
 export default function Router() {
   return useRoutes([
@@ -34,6 +35,7 @@ export default function Router() {
       children: [
         { path: '/', element: <Navigate to="/home" /> },
         { path: 'userLogin', element: <LoginUser /> },
+        { path: 'adminLogin', element: <LoginAdmin /> },
         { path: 'registerUser', element: <RegisterUser /> },
         { path: 'registerAdmin', element: <RegisterAdmin /> },
       ],
