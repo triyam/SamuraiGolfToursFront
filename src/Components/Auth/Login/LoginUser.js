@@ -1,73 +1,146 @@
-import React from "react";
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Axios } from '../../../Utils/Axios'
 
-const LoginUser = () => (
-      <div className="login-page"> 
-		<div class="login-box">
+const LoginUser = () => {
+  const navigate = useNavigate()
 
-  <div class="card card-outline card-primary">
-    <div class="card-header text-center">
-      <a href="#" class="h2"><b>Samurai</b>&nbsp;Golf&nbsp;Tours</a>
-    </div>
-    <div class="card-body">
-      <p class="login-box-msg">Login to start your session</p>
+  const [loginDetails, setloginDetails] = useState({
+    email: '',
+    password: '',
+    remember: false,
+  })
 
-      <form action="#" method="post">
-        <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email" />
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (loginDetails.email.length === 0 && !loginDetails.password) {
+      return alert('Email and password are required')
+    }
+    Axios.post(
+      '/user/signin',
+      {
+        email: loginDetails.email,
+        password: loginDetails.password,
+      },
+      {
+        header: {
+          'Content-Type': 'application/json',
+        },
+      }
+    )
+      .then((res) => {
+        localStorage.setItem('jwt', res.data.token)
+        localStorage.setItem('user', JSON.stringify(res.data.user))
+        navigate('/dashboard/userDashboard')
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
+
+  return (
+    <div className="login-page">
+      <div className="login-box">
+        <div className="card card-outline card-primary">
+          <div className="card-header text-center">
+            <a href="#" className="h2">
+              <b>Samurai</b>&nbsp;Golf&nbsp;Tours
+            </a>
+          </div>
+          <div className="card-body">
+            <p className="login-box-msg">Login to start your session</p>
+
+            <form>
+              <div className="input-group mb-3">
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email"
+                  onChange={(e) =>
+                    setloginDetails({ ...loginDetails, email: e.target.value })
+                  }
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                    <span className="fas fa-envelope"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="input-group mb-3">
+                <input
+                  type="password"
+                  className="form-control"
+                  placeholder="Password"
+                  onChange={(e) =>
+                    setloginDetails({
+                      ...loginDetails,
+                      password: e.target.value,
+                    })
+                  }
+                />
+                <div className="input-group-append">
+                  <div className="input-group-text">
+                    <span className="fas fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-8">
+                  <div className="icheck-primary">
+                    <input
+                      type="checkbox"
+                      id="remember"
+                      onChange={(e) =>
+                        setloginDetails({
+                          ...loginDetails,
+                          remember: e.target.checked,
+                        })
+                      }
+                    />
+                    <label htmlFor="remember">Remember Me</label>
+                  </div>
+                </div>
+
+                <div className="col-4">
+                  <button
+                    onClick={handleSubmit}
+                    className="btn btn-primary btn-block"
+                  >
+                    LogIn
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <div className="social-auth-links text-center mt-2 mb-3">
+              <p>- OR -</p>
+              <a href="#" className="btn btn-block btn-primary">
+                <i className="fab fa-facebook mr-2"></i> Sign in using Facebook
+              </a>
+              <a href="#" className="btn btn-block btn-danger">
+                <i className="fab fa-google-plus mr-2"></i> Sign in using
+                Google+
+              </a>
             </div>
+
+            <p className="mb-1">
+              <a href="forgot-password.html">I forgot my password</a>
+            </p>
+            <p className="mb-1">
+              <a href="/registerUser" className="text-center">
+                Register a new membership
+              </a>
+            </p>
+            <p className="mb-1">
+              <a href="/registerAdmin" className="text-center">
+                Register as a admin
+              </a>
+            </p>
           </div>
         </div>
-        <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password" />
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember" />
-              <label for="remember">
-                Remember Me
-              </label>
-            </div>
-          </div>
-    
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">LogIn</button>
-          </div>
-        
-        </div>
-      </form>
-
-      <div class="social-auth-links text-center mt-2 mb-3">
-	  	<p>- OR -</p>
-        <a href="#" class="btn btn-block btn-primary">
-          <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
-        </a>
-        <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
-        </a>
       </div>
-
-
-      <p class="mb-1">
-        <a href="forgot-password.html">I forgot my password</a>
-      </p>
-      <p class="mb-0">
-        <a href="/" class="text-center">Register a new membership</a>
-      </p>
     </div>
-
-  </div>
-
-</div>
-	  </div>
-)
+  )
+}
 
 export default LoginUser
